@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"], // Add Ubuntu font
+      },
+    },
   },
   plugins: [],
 };
