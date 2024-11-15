@@ -8,23 +8,42 @@
   </head>
   <body class="mx-auto max-w-[1440px] shadow-md">
     <!-- navbar start -->
-    <div id="menu" class="flex items-center justify-between md:px-[112px]">
+    <div
+      id="menu"
+      class="flex items-center justify-between md:px-[112px] px-12"
+    >
       <div class="text-white p-4">
         <img src="./assets/logo.png" alt="logo" />
       </div>
-      <nav class="hidden md:flex">
+      <div class="hidden md:flex">
         <ul class="flex space-x-6 text-[#470FAA] font-semibold">
           <li><a href="#" class="hover:text-gray-300">Resources</a></li>
           <li><a href="#" class="hover:text-gray-300">Lookups</a></li>
           <li><a href="#" class="hover:text-gray-300">Login</a></li>
         </ul>
-      </nav>
+      </div>
+      <div class="md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
+      </div>
     </div>
     <!-- navbar end -->
 
     <!-- hero start -->
     <div
-      class="bg-[#F9F5FF] md:px-[112px] flex justify-between items-center pt-6 pb-[80px]"
+      class="bg-[#F9F5FF] md:px-[112px] px-12 flex justify-between items-center pt-6 pb-[80px]"
     >
       <!-- left -->
       <div class="max-w-[592px]">
@@ -32,7 +51,7 @@
           Hire a world best search specialist
         </p>
         <h1
-          class="text-[#26273C] text-[55px] font-ubuntu font-bold leading-snug mt-6"
+          class="text-[#26273C] md:text-[55px] text-[45px] font-ubuntu font-bold leading-snug mt-6"
         >
           Hire A World Class Professional Online Research Investigator
         </h1>
@@ -44,16 +63,18 @@
           >
           using even hard to find publicly available information.
         </p>
-        <div class="flex mt-7">
+        <div
+          class="flex flex-col md:flex-row mt-7 justify-center gap-y-3 items-center"
+        >
           <a
             href="#"
-            class="px-6 py-3 bg-[#45B978] text-white font-ubuntu font-medium rounded-md hover:bg-green-500"
+            class="w-2/4 px-6 py-3 bg-[#45B978] text-white font-ubuntu font-medium rounded-md hover:bg-green-500"
           >
             Hire Search Specialist
           </a>
           <a
             href="#"
-            class="px-6 py-3 text-blue-500 font-ubuntu font-medium hover:text-blue-300 flex items-center space-x-2"
+            class="md:px-6 py-3 text-blue-500 font-ubuntu font-medium hover:text-blue-300 flex items-center space-x-2"
           >
             <img src="./assets/headset.png" alt="headset" />
             <span>Schedule a Free Consultation</span>
@@ -61,31 +82,33 @@
         </div>
       </div>
       <!-- right -->
-      <div>
+      <div class="hidden lg:flex">
         <img src="./assets/hero.png" alt="hero" />
       </div>
     </div>
     <!-- hero end -->
 
     <!-- user reviews start -->
-    <div class="md:px-[112px] mt-[80px] w-full pb-9">
+    <div class="md:px-[112px] px-12 mt-[80px] w-full pb-9">
       <div class="flex items-center justify-between w-full">
         <div class="flex items-center space-x-7">
           <p class="text-[40px] font-ubuntu font-bold text-[#26273C]">
             What People Are Saying?
           </p>
           <div>
-            <img src="./assets/logo2.png" alt="logo" />
+            <img src="./assets/logo2.png" alt="logo" class="hidden md:flex" />
           </div>
         </div>
-        <div class="flex space-x-4">
+        <div class="md:flex space-x-4 hidden">
           <img src="./assets/leftarrow.png" alt="left arrow" />
           <img src="./assets/rightarrow.png" alt="right arrow" />
         </div>
       </div>
 
       <!-- user review cards -->
-      <div class="grid grid-cols-3 my-8 gap-x-4">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 gap-x-4 gap-y-4"
+      >
         <!-- card 1 -->
         <div>
           <div
@@ -205,13 +228,13 @@
 
     <!-- contact section -->
     <div
-      class="bg-gradient-to-r from-blue-600 to-violet-700 flex px-[112px] pt-[60px] justify-between"
+      class="bg-gradient-to-r from-blue-600 to-violet-700 flex md:px-[112px] pt-[60px] justify-between"
     >
       <div class="p-12">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <!-- left -->
           <div>
-            <h2 class="text-4xl font-ubuntu font-bold text-white mb-4">
+            <h2 class="text-[32px] font-ubuntu font-bold text-white mb-4">
               Schedule A Consultation
             </h2>
             <p class="text-white/90 mb-12">
@@ -220,7 +243,9 @@
             </p>
 
             <div class="space-y-8">
-              <p class="text-emerald-400 font-medium tracking-wide">
+              <p
+                class="text-[#2AD38A] font-medium tracking-wide font-sm font-semibold"
+              >
                 CONNECT WITH US
               </p>
               <div class="space-x-4 flex">
@@ -289,10 +314,10 @@
     <!-- footer -->
 
     <div>
-      <div class="bg-[#26273C] px-[112px]">
+      <div class="bg-[#26273C] md:px-[112px] px-12">
         <div class="flex justify-center py-8 flex-col items-center">
           <div>
-            <p class="text-white">
+            <p class="text-white text-center">
               © 2020 by socialcatfish.com. All Rights Reserved. | Terms of Use |
               Privacy Policy | Directory | CA Residents Privacy Policy
             </p>
